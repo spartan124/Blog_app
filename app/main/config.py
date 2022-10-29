@@ -12,7 +12,7 @@ rds_port = os.getenv("RDS_PORT", None)
 rds_host_name = os.getenv("RDS_HOSTNAME", None)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-# prod_database_uri= f"postgresql://{rds_username}:{rds_password}@{rds_host_name}:{rds_port}/{db_name}"
+prod_database_uri= f"postgresql://{rds_username}:{rds_password}@{rds_host_name}:{rds_port}/{db_name}"
 
 class Config:
     SECRET_KEY= os.getenv("SECRET_KEY", "DGGKEIEOMACVNNETKAAMFBfbn")
